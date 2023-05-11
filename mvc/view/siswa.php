@@ -1,17 +1,17 @@
 <table border="1" width="300px">
     <thead align="left">
         <tr>
-            <th>Nim
+            <th width="100px">Nim
             <td><?= $value_siswa['nim']; ?></td>
             </th>
         </tr>
         <tr>
-            <th>Nama
+            <th width="100px">Nama
             <td><?= $value_siswa['nama']; ?></td>
             </th>
         </tr>
         <tr>
-            <th>Foto
+            <th width="100px">Foto
             <td><?php if ( $value_siswa['foto'] == null ) {
                 echo '<img src="./photo/smile/smile.jpg" width="70" height="90" />';
                 }else{
@@ -20,7 +20,7 @@
             </th>
         </tr>
         <tr>
-            <th>Alamat
+            <th width="100px">Alamat
             <td><?= $value_siswa['alamat']; ?></td>
             </th>
         </tr>

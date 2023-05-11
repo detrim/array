@@ -2,7 +2,7 @@
     <thead>
         <?php foreach ($nim[$value_siswa['nim']] as $key_nim => $value_nim) : ?>
         <tr align="left">
-            <th style="text-transform: capitalize;"><?= $key_nim; ?>
+            <th style="text-transform: capitalize;" width="100px"><?= $key_nim; ?>
             <td><?= $value_nim; ?></td>
             </th>
         </tr>
