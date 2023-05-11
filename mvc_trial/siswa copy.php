@@ -1,20 +1,35 @@
+<?php foreach ($value_siswa as $key => $value) {
+    $$key = $value;
+    // var_dump($foto);
+} ?>
+<?php 
+$urutan = ['rudi', 'wati', 'dona', 'budi'];
+
+foreach ($urutan as $key => $value) {
+    $$value =$key*100;
+}
+?>
+<?= $rudi; ?>
+<?= $wati; ?>
+<?= $dona; ?>
+<?= $budi; ?>
 <table border="1" width="300px">
     <thead align="left">
         <tr>
             <th width="100px">Nim
-            <td><?= $value_siswa['nim']; ?></td>
+            <td><?= $nim; ?></td>
             </th>
         </tr>
         <tr>
             <th width="100px">Nama
-            <td><?= $value_siswa['nama']; ?></td>
+            <td><?= $nama; ?></td>
             </th>
         </tr>
         <tr>
             <th width="100px">Foto
-                <?= file_exists($value_siswa['foto']); ?>
-            <td><?php if ( file_exists($value_siswa['foto'])  ) {
-                echo '<img src="'.$value_siswa['foto'].'" width="70" height="90" />';
+                <?= file_exists($foto); ?>
+            <td><?php if ( file_exists($foto)  ) {
+                echo '<img src="'.$foto.'" width="70" height="90" />';
                 }else{
                     echo '<img src="./photo/smile/smile.jpg" width="70" height="90" />';  
                 } ?></td>
@@ -22,7 +37,7 @@
         </tr>
         <tr>
             <th width="100px">Alamat
-            <td><?= $value_siswa['alamat']; ?></td>
+            <td><?= $alamat; ?></td>
             </th>
         </tr>
         </tr>
